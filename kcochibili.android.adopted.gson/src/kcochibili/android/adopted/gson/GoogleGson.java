@@ -10,9 +10,9 @@ public class GoogleGson implements GsonComponent {
 	}
 
 	@Override
-	public Object toJson (final String json, final Class<?> classOfT) {
+	public Object fromJson (final String json, final Class<?> classOfT) {
 		final com.google.gson.Gson gson = new com.google.gson.Gson();
-		return gson.toJson(json, classOfT);
+		return gson.fromJson(json, classOfT);
 	}
 
 	@Override

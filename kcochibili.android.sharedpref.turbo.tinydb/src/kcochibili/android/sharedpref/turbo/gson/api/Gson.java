@@ -27,7 +27,7 @@ public class Gson {
 	}
 
 	public static Object fromJson(String json, Class<?> classOfT) {
-		return invoke().toJson(json, classOfT);
+		return invoke().fromJson(json, classOfT);
 	}
 
 }
